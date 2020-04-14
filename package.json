@@ -7,13 +7,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "client": "cd client && npm start",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "path": "^0.12.7",
     "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.3"
   }
 }
