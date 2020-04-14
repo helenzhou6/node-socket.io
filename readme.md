@@ -5,3 +5,5 @@ This example accompanies the
 tutorial.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+Example of an app with Express backend server, React front-end and websocket connection
